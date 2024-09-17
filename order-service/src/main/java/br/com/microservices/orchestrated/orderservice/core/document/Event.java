@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Data
@@ -25,5 +25,5 @@ public class Event {
     private String source;
     private String status;
     private List<History> eventHistory;
-    private LocalDate createdAt;
+    private LocalDateTime createdAt;
 }
